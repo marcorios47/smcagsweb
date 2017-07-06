@@ -1,0 +1,91 @@
+﻿<% include partials/header.ejs %>
+
+<h1>Test Page</h1>
+
+	<form action="/test/new" method="POST">
+		<div>
+			<label>First Name: </label>
+				<input type="text" name="firstName" placeholder="first name">
+			<label>Last Name: </label>
+				<input type="text" name="lastName" placeholder="last name">
+			<label>Full Name to Appear on the AGS Certificate: </label>
+				<input type="text" name="certificateName" placeholder="full name to be displayed on certificate">
+			<label>smc student email address: </label>
+				<input type="email" name="schoolEmail" placeholder="school email" pattern=".+@student.smc.edu">
+			<label>Confirm your smc student email address: </label>	
+				<input type="email" name="schoolEmailConfirmation" placeholder="confirm school email" pattern=".+@student.smc.edu">
+			<label>other email address: </label>
+				<input type="email" name="secondaryEmail" placeholder="Secondary email">
+			<label>confirm your other email address: </label>
+				<input type="email" name="secondaryEmailConfirmation" placeholder="Confirm Secondary email">
+			<label>password: (at least 6 characters) </label>
+		        <input type="password" name="password" placeholder="password"> 
+		    <label>confirm your password: </label>
+		        <input type="password" name="passwordConfirmation" placeholder="password"> 
+	    </div>
+	    <div>
+		    <label>smc student id: </label>
+		    	<input type="number" name="studentId" placeholder="smc student id number">
+		    <label>A.S. Sticker Number: </label>
+		    	<input type="number" name="associatedStudentsStickerNumber" placeholder="Associated Students Sticker Number number">
+		    <label>phone number: </label>
+		    	<input type="number" name="phoneNumber" placeholder="phone number">
+	    </div>
+    	<div>
+    		<label>Current Address: </label>
+	    		<input type="text" name="currentAddress" placeholder="current address">
+	    	<label>city: </label>
+	    		<input type="text" name="city" placeholder="city">
+	    	<label>zip code: </label>	
+	    		<input type="text" name="zipCode" placeholder="zip code">
+    	</div>
+    	<div>
+			<p>
+				<h3>Transcript Notation:</h3> 
+				Additional membership requirements: Must be currently enrolled at SMC in at least three units
+				<ul>
+					<li>At least 20 hours of community service at AGS sponsored events. Of these 20 hours, a maximum of ten (10) hours can be AGS approved Independent Volunteer Hours.</li>
+					<li>Attend at least six general meetings. Members are responsible for information provided at general meetings, posted at the Events Calendar, or sent via e-mail from AGS (adviser or officer) to SMC's e-mail account.</li>
+					<li>Join a committee and fulfill all committee requirements or complete two AGS fundraisers.</li>
+					<li>Attend one AGS sponsored social event. Check the AGS Events calendar for approved social events, and plan accordingly. Check-in and Check-out times must be adhered to.</li>
+					<li>Must abide by the SMC Student Conduct Code, the AGS Code of Conduct, and the AGS club constitution.</li>
+				</ul>
+			</p>
+			<h3>
+				Terms and Conditions: (YOU MUST ACCEPT THEM OR FACE YOUR GREATEST FEAR!!!)
+			</h3>
+			<p>
+				When you sign up for an AGS sponsored community service event or any event and then realize you need to cancel, you are responsible for dropping the event online with at least seventy-two (72) hour notice. As a courtesy, notify the header (AGS person in charge of the event) of your absence via e-mail. Failure to drop the event with advance notice will result in a deduction of one hour from the total of your community service hours and a minus one (-1) will show on your AGS record. Three minus ones (three hours deducted from the total of your community service hours) and you will not be eligible to recieve a transcript notation for the current semester. Independent hours opportunities that are NOT llisted at the AGS website mu be pre-approved by the AGS Executive Board or those hours will not be counted.
+				 
+				When attending an AGS sponsored event:
+				<ul>
+					<li>You should always approach these events with a positive attitude. If you are not sure what kind of work you will be asked to do, ASK QUESTIONS BEFORE YOU SIGN UP FOR HTE EVENT. If you are unable to do the work, don't sign up for the event. If you are sked to do something, please do it with a smile.</li> 
+					<li>If you have any complaints, problems or questions, speak to the Event Header. He/she will handle the situation to the best of his/her knowledge. Please never complain or say anything negative to anyone connected with teh organization for which we are volunteering. This is a very serious issue. AGS does not want to leave a bad impression with the organization</li> 
+					<li>If possible thank the representative of the organization for letting you participate. If you had a good time, tell them. If you did not have a good time, DON'T SAY ANYTHING TO THEM, bo do tell the STUDENT RELATIONS OFFICER at the next meeting or via e-mail as soon as possible. We are constantly trying to set up events that are fun for you to do, and we want your feedback.</li> 
+					<li>If any problem related to events need to be addressed by the Executive Board, please contact the STUDENT RELATIONS OFFICE. He or she will help you resolve the problem and will tell you what you need to do. If needed, he or she will bring the issue to the table at the Executive Board meetings</li> 
+					<li>You are responsible for the behavior of any guest you bring to an AGS Event.</li> 
+					<li>Showing up for any AGS event intoxicated (on alchol or drugs) or becoming intoxicated while volunteering at an AGS Event is grounds for immediate termination of your club membership.</li> 
+					<li>Cheating, falsifing records, lying, stealing, fraud or deceit of any kind is also grounds for immediate termination of your club membership.</li> 
+					<li> Failure to follow the Code of Conduct will result in disciplinary action, at the executive board's discretion with the guidance of our advisors, which includes but is not limited to the termination of your club membership.</li> 
+				</ul>
+				by signing below,
+				<ol>`
+					<li>I verify that all information provided is accurate to the best of my knowledge</li>
+					<li>I understand it is my responsibility to be aware of all deadline to complete service hours, to submit hour sheets, to submit fundraiser monies.</li>
+					<li>It is my responsibility to be aware of all committee or fundraiser requirements.</li>
+					<li>I have read and understood the AGS Code of Conduct and the AGS Constitution. I agree to abide by the AGS Code of Conduct</li>
+					<li>I understand that it is my responsibility to read and understand all rules and information on this application.</li>
+					<li><strong> I understand that I must booga booga the Executive board at least 5 times everyday </strong></li>
+				</ol>
+			</p>
+		</div>
+		<label>E-Signature:</label>
+			<input type="text" name="eSignature">
+		<label>Date:</label>
+			<input type="date" name="signUpDate">
+        <button>Submit</button>
+    </form>
+
+
+<% include partials/footer.ejs %>
+

@@ -1,0 +1,15 @@
+﻿<% include partials/header.ejs %>
+
+<h1>New Event Form</h1>
+	<form action="/createEvent/new" method="POST">
+		<input type="text" name="eventName" placeholder="Event Name">
+		<input type="text" name="description" placeholder="Description">
+		<input type="date" name="dateOfEvent" placeholder="Date of Event">
+		<input type="time" name="timeStart" placeholder="Start Time">
+		<input type="time" name="timeEnd" placeholder="End Time">
+		<input type="number" name="maxNumberOfSignUps" placeholder="Max Number of Volunteers">
+        <button>Create Event</button>
+    </form>
+
+
+<% include partials/footer.ejs %>

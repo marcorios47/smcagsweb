@@ -1,0 +1,16 @@
+﻿<% include partials/header.ejs %>
+
+<h1>Pre Sign Up</h1>
+
+	<form action="/preSignUp/new" method="POST">
+		<input type="email" name="schoolEmail"			 placeholder="school email">
+		<input type="email"	name="sechoolEmailConfirmation" placeholder="confirm school email optional">
+		<input type="email" name="secondaryEmail"       placeholder="secondary email optional">
+		<input type="email"	name="secondaryEmailConfirmation" placeholder="confirm secondary email ">
+		<input type="text" name="firstName"			 placeholder="first name">
+		<input type="text" name="lastName"			 placeholder="last name">
+        <button> submit </button>
+    </form>
+
+
+<% include partials/footer.ejs %>
